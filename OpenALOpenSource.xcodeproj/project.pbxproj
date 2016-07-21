@@ -21,6 +21,14 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1A2CD09C1D411E3C00F10449 /* oalRingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2CD09A1D411E2800F10449 /* oalRingBuffer.cpp */; };
+		1A2CD09D1D411E3C00F10449 /* oalRingBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2CD09B1D411E2800F10449 /* oalRingBuffer.h */; };
+		1A2CD09E1D411E3D00F10449 /* oalRingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2CD09A1D411E2800F10449 /* oalRingBuffer.cpp */; };
+		1A2CD09F1D411E3D00F10449 /* oalRingBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2CD09B1D411E2800F10449 /* oalRingBuffer.h */; };
+		1A2CD0A01D411E4100F10449 /* oalCaptureMixer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2CD0981D411E2800F10449 /* oalCaptureMixer.cpp */; };
+		1A2CD0A11D411E4100F10449 /* oalCaptureMixer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2CD0991D411E2800F10449 /* oalCaptureMixer.h */; };
+		1A2CD0A21D411E4200F10449 /* oalCaptureMixer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A2CD0981D411E2800F10449 /* oalCaptureMixer.cpp */; };
+		1A2CD0A31D411E4200F10449 /* oalCaptureMixer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2CD0991D411E2800F10449 /* oalCaptureMixer.h */; };
 		8A0CB5BF097F5FC000B17352 /* CAAudioUnitOutputCapturer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A0CB5BD097F5FC000B17352 /* CAAudioUnitOutputCapturer.h */; };
 		8A10679108D8C3460060359C /* CAThreadSafeList.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A10678F08D8C3460060359C /* CAThreadSafeList.h */; };
 		8A3A1DA308EC575A008DD7C5 /* CABufferList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A1DA108EC575A008DD7C5 /* CABufferList.cpp */; };
@@ -144,6 +152,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A2CD0981D411E2800F10449 /* oalCaptureMixer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oalCaptureMixer.cpp; sourceTree = "<group>"; };
+		1A2CD0991D411E2800F10449 /* oalCaptureMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oalCaptureMixer.h; sourceTree = "<group>"; };
+		1A2CD09A1D411E2800F10449 /* oalRingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oalRingBuffer.cpp; sourceTree = "<group>"; };
+		1A2CD09B1D411E2800F10449 /* oalRingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oalRingBuffer.h; sourceTree = "<group>"; };
 		8A0561E40546034200A003E7 /* oalOSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oalOSX.h; sourceTree = "<group>"; };
 		8A0561E50546034200A003E7 /* oalOSX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oalOSX.cpp; sourceTree = "<group>"; };
 		8A0CB5BD097F5FC000B17352 /* CAAudioUnitOutputCapturer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CAAudioUnitOutputCapturer.h; sourceTree = "<group>"; };
@@ -255,20 +267,24 @@
 			isa = PBXGroup;
 			children = (
 				989FD9DC0444FB92005F25BE /* al */,
-				8AB7B234053B3AC100A9757A /* oalBuffer.h */,
 				8AF8503708D2513B004B64E7 /* oalBuffer.cpp */,
-				8A5E140408EB104300AFA934 /* oalCaptureDevice.h */,
+				8AB7B234053B3AC100A9757A /* oalBuffer.h */,
 				8A5E140508EB104300AFA934 /* oalCaptureDevice.cpp */,
-				8AB7B22C053B3AA700A9757A /* oalContext.h */,
+				8A5E140408EB104300AFA934 /* oalCaptureDevice.h */,
+				1A2CD0981D411E2800F10449 /* oalCaptureMixer.cpp */,
+				1A2CD0991D411E2800F10449 /* oalCaptureMixer.h */,
 				8AB7B22D053B3AA700A9757A /* oalContext.cpp */,
-				8A39B0B20533393F006B1D0F /* oalDevice.h */,
+				8AB7B22C053B3AA700A9757A /* oalContext.h */,
 				8A39B0B30533393F006B1D0F /* oalDevice.cpp */,
-				8A986533053763B9003F7FA0 /* oalImp.h */,
+				8A39B0B20533393F006B1D0F /* oalDevice.h */,
 				8A986534053763B9003F7FA0 /* oalImp.cpp */,
-				8A0561E40546034200A003E7 /* oalOSX.h */,
+				8A986533053763B9003F7FA0 /* oalImp.h */,
 				8A0561E50546034200A003E7 /* oalOSX.cpp */,
-				8AB7B230053B3AB500A9757A /* oalSource.h */,
+				8A0561E40546034200A003E7 /* oalOSX.h */,
+				1A2CD09A1D411E2800F10449 /* oalRingBuffer.cpp */,
+				1A2CD09B1D411E2800F10449 /* oalRingBuffer.h */,
 				8A87DABF08B1099D00178F66 /* oalSource.cpp */,
+				8AB7B230053B3AB500A9757A /* oalSource.h */,
 				8A681A8C0736ACD900730BF4 /* OpenAL.exp */,
 			);
 			name = OpenAL;
@@ -320,6 +336,7 @@
 				8AC6BDCF09B39D9400242AEF /* alc.h in Headers */,
 				8AC6BDD009B39D9400242AEF /* oalBuffer.h in Headers */,
 				8AC6BDD109B39D9400242AEF /* oalContext.h in Headers */,
+				1A2CD0A31D411E4200F10449 /* oalCaptureMixer.h in Headers */,
 				8AC6BDD209B39D9400242AEF /* oalDevice.h in Headers */,
 				8AC6BDD309B39D9400242AEF /* oalImp.h in Headers */,
 				8AC6BDD409B39D9400242AEF /* oalOSX.h in Headers */,
@@ -331,6 +348,7 @@
 				8AC6BDDB09B39D9400242AEF /* CAMutex.h in Headers */,
 				8AC6BDDC09B39D9400242AEF /* CAStreamBasicDescription.h in Headers */,
 				8AC6BDDD09B39D9400242AEF /* CAThreadSafeList.h in Headers */,
+				1A2CD09F1D411E3D00F10449 /* oalRingBuffer.h in Headers */,
 				8AC6BDDE09B39D9400242AEF /* oalCaptureDevice.h in Headers */,
 				8AC6BDDF09B39D9400242AEF /* CABufferList.h in Headers */,
 				8AC6BDE009B39D9400242AEF /* CAAudioUnitOutputCapturer.h in Headers */,
@@ -353,9 +371,11 @@
 				F4A98A1C065E622800F04966 /* CAHostTimeBase.h in Headers */,
 				F4A98A1F065E622A00F04966 /* CAGuard.h in Headers */,
 				F4A98A20065E622A00F04966 /* CADebugMacros.h in Headers */,
+				1A2CD0A11D411E4100F10449 /* oalCaptureMixer.h in Headers */,
 				8A10679108D8C3460060359C /* CAThreadSafeList.h in Headers */,
 				8A5E140608EB104300AFA934 /* oalCaptureDevice.h in Headers */,
 				8A3A1DA408EC575A008DD7C5 /* CABufferList.h in Headers */,
+				1A2CD09D1D411E3C00F10449 /* oalRingBuffer.h in Headers */,
 				8AE33A27090F0C1B00AF30D6 /* alc.h in Headers */,
 				8AE33A29090F0C3D00AF30D6 /* al.h in Headers */,
 				8A0CB5BF097F5FC000B17352 /* CAAudioUnitOutputCapturer.h in Headers */,
@@ -414,6 +434,8 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 8ACD0BBC0885C20A00D0637F /* Build configuration list for PBXProject "OpenALOpenSource" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
@@ -471,9 +493,11 @@
 				8AC6BDE209B39D9400242AEF /* oalContext.cpp in Sources */,
 				8AC6BDE309B39D9400242AEF /* oalDevice.cpp in Sources */,
 				8AC6BDE409B39D9400242AEF /* oalImp.cpp in Sources */,
+				1A2CD0A21D411E4200F10449 /* oalCaptureMixer.cpp in Sources */,
 				8AC6BDE509B39D9400242AEF /* oalOSX.cpp in Sources */,
 				8AC6BDE609B39D9400242AEF /* CAGuard.cpp in Sources */,
 				8AC6BDE709B39D9400242AEF /* CAHostTimeBase.cpp in Sources */,
+				1A2CD09E1D411E3D00F10449 /* oalRingBuffer.cpp in Sources */,
 				8AC6BDE809B39D9400242AEF /* CAMutex.cpp in Sources */,
 				8AC6BDE909B39D9400242AEF /* CAStreamBasicDescription.cpp in Sources */,
 				8AC6BDEB09B39D9400242AEF /* CADebugMacros.cpp in Sources */,
@@ -491,9 +515,11 @@
 				8ACAAC8006528BF200E2D337 /* oalDevice.cpp in Sources */,
 				8ACAAC8106528BF200E2D337 /* oalImp.cpp in Sources */,
 				8ACAAC8206528BF200E2D337 /* oalContext.cpp in Sources */,
+				1A2CD0A01D411E4100F10449 /* oalCaptureMixer.cpp in Sources */,
 				8ACAAC8406528BF200E2D337 /* oalOSX.cpp in Sources */,
 				F4A98A18065E622600F04966 /* CAStreamBasicDescription.cpp in Sources */,
 				F4A98A1A065E622700F04966 /* CAMutex.cpp in Sources */,
+				1A2CD09C1D411E3C00F10449 /* oalRingBuffer.cpp in Sources */,
 				F4A98A1D065E622800F04966 /* CAHostTimeBase.cpp in Sources */,
 				F4A98A1E065E622900F04966 /* CAGuard.cpp in Sources */,
 				8A787DF406E7B40500CD7287 /* CADebugMacros.cpp in Sources */,
@@ -532,7 +558,7 @@
 				INSTALL_PATH = /Developer/Examples/CoreAudio/OpenAL;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				OTHER_CFLAGS = "\U0001";
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LIBTOOL_FLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = openal;
@@ -681,8 +707,7 @@
 		8ACD0BBD0885C20A00D0637F /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_DEBUGGING_SYMBOLS = full;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
@@ -692,11 +717,11 @@
 		8ACD0BBE0885C20A00D0637F /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_DEBUGGING_SYMBOLS = full;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
-				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Development;
 		};
